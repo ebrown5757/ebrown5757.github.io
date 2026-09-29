@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethan M. Brown | Digital Media Designer</title>
+  <meta name="description" content="Personal website of Ethan M. Brown, a digital media designer working in game development, 3D art, and animation.">
+  <style>
+    :root {
+      --bg: #f3f6f7;
+      --surface: #ffffff;
+      --text: #1d2a33;
+      --muted: #55646e;
+      --accent: #1f6f6b;
+      --line: #d5dee2;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    a { color: var(--accent); }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 0 1.25rem; }
+
+    header { background: var(--surface); border-bottom: 1px solid var(--line); }
+    header .wrap { padding-top: 3rem; padding-bottom: 1.5rem; }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      line-height: 1.1;
+      margin: 0 0 .5rem;
+    }
+    .tagline { font-size: 1.15rem; color: var(--muted); margin: 0 0 1.5rem; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+    nav a { text-decoration: none; font-weight: 600; padding: .25rem 0; display: inline-block; border-bottom: 2px solid transparent; }
+    nav a:hover { border-bottom-color: var(--accent); }
+
+    section { padding: 2.5rem 0 .5rem; }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.7rem;
+      margin: 0 0 1rem;
+      padding-bottom: .4rem;
+      border-bottom: 2px solid var(--accent);
+    }
+    h3 { font-size: 1.05rem; margin: 0; }
+    .entry { margin-bottom: 1.5rem; }
+    .meta { color: var(--muted); font-size: .95rem; margin: .1rem 0 .4rem; }
+    ul.plain { margin: .3rem 0 0; padding-left: 1.2rem; }
+    ul.plain li { margin-bottom: .25rem; }
+    h3.group { margin: 2rem 0 1rem; color: var(--muted); font-weight: 600; }
+
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
+    .skill-box { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.1rem; }
+    .skill-box h3 { margin-bottom: .4rem; }
+    .skill-box ul { margin: 0; padding-left: 1.1rem; }
+
+    footer { margin-top: 3rem; padding: 1.5rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <h1>Ethan M. Brown</h1>
+      <p class="tagline">Digital media designer</p>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a digital media designer who builds unique and exciting experiences for users. I work across game development, 3D art, animation, and technical writing, and I enjoy leading creative teams toward a single shared vision.</p>
+      <p>I graduated summa cum laude from Eastern Illinois University in 2025 with a degree in Digital Media Technology. I've spent years leading and supporting volunteer Skyrim mod projects with collaborators around the world.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <h3>Bachelor of Science, Digital Media Technology</h3>
+        <p class="meta">Eastern Illinois University, Charleston, IL | May 2025</p>
+        <ul class="plain">
+          <li>Graduated summa cum laude.</li>
+          <li>Outstanding Student in the School of Technology (April 2025).</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Associate of Applied Science, Digital Media</h3>
+        <p class="meta">Parkland College, Champaign, IL | May 2023</p>
+        <ul class="plain">
+          <li>Graduated with honors.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Certificate, Alias/Wavefront - MAYA 3D</h3>
+        <p class="meta">Parkland College, Champaign, IL | December 2022</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <h3>Quality Assurance, Cyrodiil: The Seat of Sundered Kings</h3>
+        <p class="meta">Remote | January 2021 to present</p>
+        <ul class="plain">
+          <li>Perform quality assurance for a volunteer modification project for The Elder Scrolls V: Skyrim.</li>
+          <li>Fix programming, writing, and art errors alongside the team.</li>
+          <li>Communicate with a variety of people to resolve large issues.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Creative Lead, Pyandonea: The Veil of Mist</h3>
+        <p class="meta">Remote | July 2019 to June 2024</p>
+        <ul class="plain">
+          <li>Managed a volunteer modification project for The Elder Scrolls V: Skyrim.</li>
+          <li>Led the team toward a single cohesive vision.</li>
+          <li>Collaborated with people around the world with different experience levels in different disciplines.</li>
+          <li>Contributed 3D art, concept art, writing, and programming.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>3D Artist and Level Designer, Dice and Dragons</h3>
+        <p class="meta">Remote | July 2022</p>
+        <ul class="plain">
+          <li>Worked with a team to design and develop a small game for the Game Maker's Toolkit Game Jam 2022.</li>
+          <li>Directed the game's art style and created the base level design assets.</li>
+          <li>Created and iterated on level layouts in Unreal Engine 5.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Teller, State Bank of Bement</h3>
+        <p class="meta">Monticello, IL | September 2019 to August 2024</p>
+        <ul class="plain">
+          <li>Processed checks and cash for a range of banking transactions.</li>
+          <li>Analyzed documents with close attention to detail.</li>
+          <li>Maintained confidentiality of customer records and banking information.</li>
+        </ul>
+      </div>
+
+      <h3 class="group">Campus involvement, Eastern Illinois University</h3>
+
+      <div class="entry">
+        <h3>Developer's Club, founding member and vice president</h3>
+        <p class="meta">September 2024 to May 2025</p>
+        <ul class="plain">
+          <li>Created a space for student game developers to meet and collaborate on projects.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Panther L.E.A.D.S.</h3>
+        <p class="meta">September 2023 to May 2025</p>
+        <ul class="plain">
+          <li>Planned programs and events with the executive board for a residence hall of 200 residents.</li>
+          <li>Kept residents informed about events and updates.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <h3>Residence Hall Association</h3>
+        <p class="meta">September 2023 to May 2025</p>
+        <ul class="plain">
+          <li>Represented a residence hall at meetings.</li>
+          <li>Worked with campus partners and organizations to plan events across campus.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-box">
+          <h3>Development</h3>
+          <ul>
+            <li>Unity</li>
+            <li>Unreal Engine 5</li>
+            <li>Python</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Art and animation</h3>
+          <ul>
+            <li>3D art in Maya, Mudbox, and Blender</li>
+            <li>3D, 2D, and stop motion animation</li>
+            <li>Digital lighting and rendering</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Design and writing</h3>
+          <ul>
+            <li>Concept development</li>
+            <li>Technical writing</li>
+            <li>Project documentation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is by email:</p>
+      <p><a href="mailto:ebrown5757@gmail.com">ebrown5757@gmail.com</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 Ethan M. Brown</div>
+  </footer>
+
+</body>
+</html>
